@@ -128,3 +128,10 @@
 2025-04-30 17:31:37,432 - app - INFO - Logging setup completed
 2025-04-30 17:31:37,493 - werkzeug - WARNING -  * Debugger is active!
 2025-04-30 17:31:37,510 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 17:38:47,560 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\services\\face_service.py', reloading
+2025-04-30 17:38:47,566 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\services\\face_service.py', reloading
+2025-04-30 17:38:48,100 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 17:38:48,967 - app - INFO - Logging setup completed
+2025-04-30 17:38:48,967 - app - INFO - Logging setup completed
+2025-04-30 17:38:49,008 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 17:38:49,031 - werkzeug - INFO -  * Debugger PIN: 151-674-093
