@@ -48,36 +48,52 @@ def detect_face():
         logger.warning(f"Exception error => {request.path}\n {e}")
         raise
 
-# @main_blueprint.route('/face/detect', methods=['POST'])
-# def detect_face():
-#     if 'image' not in request.files:
-#         return jsonify({"message": "No image file provided"}), 400
-#
-#     image_file = request.files['image']
-#     try:
-#         img_bytes = BytesIO(image_file.read())
-#         img = Image.open(img_bytes).convert('RGB')
-#
-#         face_tensor = mtcnn(img)  # returns tensor: [3, H, W]
-#
-#         if face_tensor is None:
-#             return jsonify({"message": "No face detected"}), 400
-#
-#         # Convert tensor to PIL image
-#         face_img = transforms.ToPILImage()(face_tensor)
-#
-#         # Convert to base64
-#         buffer = BytesIO()
-#         face_img.save(buffer, format='JPEG')
-#         encoded_face = base64.b64encode(buffer.getvalue()).decode('utf-8')
-#
-#         return jsonify({
-#             "message": "Face detected",
-#             "face_base64": encoded_face
-#         }), 200
-#         return render_template('result.html', face=face)
-#         # return jsonify({"message": "Face detected", "size": size}), 200
-#
-#     except Exception as e:
-#         logger.warning(f"Exception error => {request.path}\n {e}")
-#         raise
+
+@main_blueprint.route('/face/get-embedding', methods=['POST'])
+def get_embedding():
+    if 'image' not in request.files:
+        return jsonify({"message": "No image file provided"}), 400
+
+    image_file = request.files['image']
+    try:
+        img_bytes = BytesIO(image_file.read())
+        img = Image.open(img_bytes).convert('RGB')
+
+        face_tensor = face_verification_service.extract_face(img)  # returns tensor: [3, H, W]
+        if face_tensor is None:
+            return jsonify({"message": "No face detected"}), 400
+
+        embedding = face_verification_service.get_embedding(face_tensor)
+
+        return (
+            jsonify({
+                'message':"get embedding successfuly",
+                'embedding':embedding.tolist()
+            }, 200)
+        )
+
+    except Exception as e:
+        logger.warning(f"Exception error => {request.path}\n {e}")
+        raise
+
+
+@main_blueprint.route('/face/verify', methods=['POST'])
+def verify_face():
+    data = request.get_json()
+    if data is None:
+        return jsonify({"message": "No data provided"}), 400
+    try:
+        embedding1 = data['embedding1']
+        embedding2 = data['embedding2']
+
+        if 'embedding1' not in data or 'embedding2' not in data:
+            return jsonify({"message": "Missing embedding data"}), 400
+
+        similarity = face_verification_service.cosine_similarity(embedding1, embedding2)
+        if similarity > 0.7:
+            return jsonify({"verify": True}), 200
+        else:
+            return jsonify({"verify": False}), 200
+    except Exception as e:
+        logger.warning(f"Exception error => {request.path}\n {e}")
+        raise

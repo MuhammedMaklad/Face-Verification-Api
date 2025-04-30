@@ -421,3 +421,77 @@
 2025-04-30 20:19:32,383 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:19:32] "GET /face HTTP/1.1" 200 -
 2025-04-30 20:19:33,603 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:19:33] "GET /face/detect HTTP/1.1" 200 -
 2025-04-30 20:19:41,654 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:19:41] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 20:38:29,899 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:38:29,901 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:38:29,903 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:38:31,590 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:38:32,133 - app - INFO - Logging setup completed
+2025-04-30 20:38:32,133 - app - INFO - Logging setup completed
+2025-04-30 20:38:43,311 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:38:43,321 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:38:50,550 - app.api.routes - WARNING - Exception error => /face/get-embedding
+ Object of type ndarray is not JSON serializable
+2025-04-30 20:38:50,550 - app.api.routes - WARNING - Exception error => /face/get-embedding
+ Object of type ndarray is not JSON serializable
+2025-04-30 20:38:50,551 - app.api.error_handlers - WARNING - Exception error => /face/get-embedding 
+ Object of type ndarray is not JSON serializable
+2025-04-30 20:38:50,551 - app.api.error_handlers - WARNING - Exception error => /face/get-embedding 
+ Object of type ndarray is not JSON serializable
+2025-04-30 20:38:50,553 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:38:50] "POST /face/get-embedding HTTP/1.1" 200 -
+2025-04-30 20:40:06,110 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:40:06,112 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:40:08,197 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:40:08,686 - app - INFO - Logging setup completed
+2025-04-30 20:40:08,686 - app - INFO - Logging setup completed
+2025-04-30 20:40:19,330 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:40:19,339 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:40:23,841 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:40:23] "POST /face/get-embedding HTTP/1.1" 200 -
+2025-04-30 20:41:56,464 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:41:56,466 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:41:58,258 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:41:58,805 - app - INFO - Logging setup completed
+2025-04-30 20:41:58,805 - app - INFO - Logging setup completed
+2025-04-30 20:41:58,841 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:41:58,854 - werkzeug - INFO -  * Debugger PIN: 365-325-336
+2025-04-30 20:43:49,095 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:43:49,788 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:43:50,362 - app - INFO - Logging setup completed
+2025-04-30 20:43:50,362 - app - INFO - Logging setup completed
+2025-04-30 20:43:50,387 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:43:50,396 - werkzeug - INFO -  * Debugger PIN: 365-325-336
+2025-04-30 20:48:30,606 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:48:31,121 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:48:31,892 - app - INFO - Logging setup completed
+2025-04-30 20:48:31,892 - app - INFO - Logging setup completed
+2025-04-30 20:48:31,931 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:48:31,947 - werkzeug - INFO -  * Debugger PIN: 365-325-336
+2025-04-30 20:49:36,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:49:36,224 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:49:36,609 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:49:37,491 - app - INFO - Logging setup completed
+2025-04-30 20:49:37,491 - app - INFO - Logging setup completed
+2025-04-30 20:49:48,925 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:49:48,934 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:50:47,528 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:50:49,129 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:50:49,651 - app - INFO - Logging setup completed
+2025-04-30 20:50:49,651 - app - INFO - Logging setup completed
+2025-04-30 20:51:01,600 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:51:01,616 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:51:49,330 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:51:49,358 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:51:51,055 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:51:51,609 - app - INFO - Logging setup completed
+2025-04-30 20:51:51,609 - app - INFO - Logging setup completed
+2025-04-30 20:52:03,147 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:52:03,167 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:52:43,604 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:52:43,654 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:52:45,593 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:52:46,089 - app - INFO - Logging setup completed
+2025-04-30 20:52:46,089 - app - INFO - Logging setup completed
+2025-04-30 20:52:56,830 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:52:56,844 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:54:32,965 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:54:32] "POST /face/verify HTTP/1.1" 200 -
+2025-04-30 20:55:04,222 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:55:04] "POST /face/verify HTTP/1.1" 200 -
+2025-04-30 20:55:35,039 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:55:35] "POST /face/verify HTTP/1.1" 200 -
