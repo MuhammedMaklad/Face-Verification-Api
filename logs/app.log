@@ -135,3 +135,289 @@
 2025-04-30 17:38:48,967 - app - INFO - Logging setup completed
 2025-04-30 17:38:49,008 - werkzeug - WARNING -  * Debugger is active!
 2025-04-30 17:38:49,031 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:40:26,605 - app - INFO - Logging setup completed
+2025-04-30 19:40:26,605 - app - INFO - Logging setup completed
+2025-04-30 19:41:35,790 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-30 19:41:35,791 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-30 19:41:35,810 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:41:36,271 - app - INFO - Logging setup completed
+2025-04-30 19:41:36,271 - app - INFO - Logging setup completed
+2025-04-30 19:41:47,685 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:41:47,701 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:41:48,089 - app.api.routes - INFO - request /face/detect
+2025-04-30 19:41:48,089 - app.api.routes - INFO - request /face/detect
+2025-04-30 19:41:48,094 - app.api.routes - ERROR - '_io.BytesIO' object has no attribute 'size'
+2025-04-30 19:41:48,094 - app.api.routes - ERROR - '_io.BytesIO' object has no attribute 'size'
+2025-04-30 19:41:48,096 - app.api.error_handlers - WARNING - Exception error => /face/detect 
+ '_io.BytesIO' object has no attribute 'size'
+2025-04-30 19:41:48,096 - app.api.error_handlers - WARNING - Exception error => /face/detect 
+ '_io.BytesIO' object has no attribute 'size'
+2025-04-30 19:41:48,098 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:41:48] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 19:45:21,669 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\services\\face_service.py', reloading
+2025-04-30 19:45:24,077 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:45:24,602 - app - INFO - Logging setup completed
+2025-04-30 19:45:24,602 - app - INFO - Logging setup completed
+2025-04-30 19:45:34,421 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:45:34,433 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:46:21,847 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\facenet_pytorch\\models\\utils\\tensorflow2pytorch.py', reloading
+2025-04-30 19:46:21,855 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\facenet_pytorch\\models\\utils\\tensorflow2pytorch.py', reloading
+2025-04-30 19:46:23,956 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:46:24,511 - app - INFO - Logging setup completed
+2025-04-30 19:46:24,511 - app - INFO - Logging setup completed
+2025-04-30 19:46:34,195 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:46:34,207 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:46:53,488 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\services\\face_service.py', reloading
+2025-04-30 19:46:53,489 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\services\\face_service.py', reloading
+2025-04-30 19:46:53,522 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:46:53,524 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:46:54,871 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:46:55,396 - app - INFO - Logging setup completed
+2025-04-30 19:46:55,396 - app - INFO - Logging setup completed
+2025-04-30 19:47:06,317 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:47:06,329 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:47:24,579 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:47:24,581 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:47:24,581 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:47:26,721 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:47:27,209 - app - INFO - Logging setup completed
+2025-04-30 19:47:27,209 - app - INFO - Logging setup completed
+2025-04-30 19:47:38,474 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:47:38,489 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:47:39,302 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:47:39] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 19:50:56,913 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torchvision\\prototype\\datasets\\_builtin\\voc.py', reloading
+2025-04-30 19:50:56,914 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torchvision\\prototype\\datasets\\_builtin\\voc.py', reloading
+2025-04-30 19:50:56,932 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\utils\\fuser_utils.py', reloading
+2025-04-30 19:50:56,933 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\utils\\fuser_utils.py', reloading
+2025-04-30 19:50:56,968 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\markdown_it\\rules_block\\state_block.py', reloading
+2025-04-30 19:50:56,970 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\markdown_it\\rules_block\\state_block.py', reloading
+2025-04-30 19:50:57,017 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torchvision\\transforms\\v2\\functional\\_color.py', reloading
+2025-04-30 19:50:57,018 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torchvision\\transforms\\v2\\functional\\_color.py', reloading
+2025-04-30 19:50:57,245 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\markdown_it\\rules_inline\\backticks.py', reloading
+2025-04-30 19:50:57,259 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\markdown_it\\rules_inline\\backticks.py', reloading
+2025-04-30 19:50:57,277 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\modules.py', reloading
+2025-04-30 19:50:57,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\modules.py', reloading
+2025-04-30 19:50:59,026 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:50:59,596 - app - INFO - Logging setup completed
+2025-04-30 19:50:59,596 - app - INFO - Logging setup completed
+2025-04-30 19:51:37,492 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:51:37,503 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:52:40,321 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:52:40,326 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:52:42,338 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:52:42,870 - app - INFO - Logging setup completed
+2025-04-30 19:52:42,870 - app - INFO - Logging setup completed
+2025-04-30 19:52:53,611 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:52:53,622 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:52:55,679 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:52:55,693 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:52:57,441 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:52:58,019 - app - INFO - Logging setup completed
+2025-04-30 19:52:58,019 - app - INFO - Logging setup completed
+2025-04-30 19:53:10,493 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:53:10,510 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:53:10,837 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:53:10] "GET /face HTTP/1.1" 200 -
+2025-04-30 19:53:11,924 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:53:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-30 19:54:11,583 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\command\\register.py', reloading
+2025-04-30 19:54:11,606 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\command\\register.py', reloading
+2025-04-30 19:54:11,607 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\pip\\_vendor\\requests\\api.py', reloading
+2025-04-30 19:54:11,608 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\callbacks.py', reloading
+2025-04-30 19:54:11,609 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\pip\\_vendor\\requests\\sessions.py', reloading
+2025-04-30 19:54:11,623 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\implementations\\dask.py', reloading
+2025-04-30 19:54:11,635 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\requests\\api.py', reloading
+2025-04-30 19:54:11,659 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\spec.py', reloading
+2025-04-30 19:54:11,662 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\implementations\\dbfs.py', reloading
+2025-04-30 19:54:11,680 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\core.py', reloading
+2025-04-30 19:54:11,681 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py', reloading
+2025-04-30 19:54:11,684 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\implementations\\webhdfs.py', reloading
+2025-04-30 19:54:11,685 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\pip\\_vendor\\requests\\api.py', reloading
+2025-04-30 19:54:11,685 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\callbacks.py', reloading
+2025-04-30 19:54:11,686 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\pip\\_vendor\\requests\\sessions.py', reloading
+2025-04-30 19:54:11,687 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\implementations\\dask.py', reloading
+2025-04-30 19:54:11,687 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\requests\\api.py', reloading
+2025-04-30 19:54:11,688 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\spec.py', reloading
+2025-04-30 19:54:11,689 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\implementations\\dbfs.py', reloading
+2025-04-30 19:54:11,689 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\core.py', reloading
+2025-04-30 19:54:11,690 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py', reloading
+2025-04-30 19:54:11,691 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\implementations\\webhdfs.py', reloading
+2025-04-30 19:54:11,691 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\command\\upload.py', reloading
+2025-04-30 19:54:11,692 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\command\\upload.py', reloading
+2025-04-30 19:54:11,694 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\pip\\_vendor\\requests\\models.py', reloading
+2025-04-30 19:54:11,695 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\pip\\_vendor\\requests\\models.py', reloading
+2025-04-30 19:54:11,696 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\monkey.py', reloading
+2025-04-30 19:54:11,696 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\monkey.py', reloading
+2025-04-30 19:54:11,697 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\wheel\\_bdist_wheel.py', reloading
+2025-04-30 19:54:11,698 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py', reloading
+2025-04-30 19:54:11,698 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\tensorflow\\python\\distribute\\failure_handling\\failure_handling.py', reloading
+2025-04-30 19:54:11,699 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\requests\\sessions.py', reloading
+2025-04-30 19:54:11,700 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\wheel\\_bdist_wheel.py', reloading
+2025-04-30 19:54:11,700 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py', reloading
+2025-04-30 19:54:11,701 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\tensorflow\\python\\distribute\\failure_handling\\failure_handling.py', reloading
+2025-04-30 19:54:11,702 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\requests\\sessions.py', reloading
+2025-04-30 19:54:11,703 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\command\\upload_docs.py', reloading
+2025-04-30 19:54:11,703 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\command\\upload_docs.py', reloading
+2025-04-30 19:54:11,704 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\fsspec\\asyn.py', reloading
+2025-04-30 19:54:11,705 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\fsspec\\asyn.py', reloading
+2025-04-30 19:54:11,705 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\requests\\models.py', reloading
+2025-04-30 19:54:11,706 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\requests\\models.py', reloading
+2025-04-30 19:54:14,537 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:54:18,117 - app - INFO - Logging setup completed
+2025-04-30 19:54:18,117 - app - INFO - Logging setup completed
+2025-04-30 19:54:37,199 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:54:37,215 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:54:47,711 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\infra\\pass_base.py', reloading
+2025-04-30 19:54:47,736 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\_export\\passes\\constant_folding.py', reloading
+2025-04-30 19:54:47,742 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\tensorflow\\python\\lib\\io\\file_io.py', reloading
+2025-04-30 19:54:47,743 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\keras\\src\\backend\\openvino\\random.py', reloading
+2025-04-30 19:54:47,744 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\edge_kcomponents.py', reloading
+2025-04-30 19:54:47,744 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\infra\\partitioner.py', reloading
+2025-04-30 19:54:47,746 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\markdown_it\\rules_block\\table.py', reloading
+2025-04-30 19:54:47,755 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\tensorflow\\python\\distribute\\experimental\\multi_worker_mirrored_strategy.py', reloading
+2025-04-30 19:54:47,760 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\tensorflow\\python\\saved_model\\load_v1_in_v2.py', reloading
+2025-04-30 19:54:47,763 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\numpy\\distutils\\fcompiler\\__init__.py', reloading
+2025-04-30 19:54:47,766 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\tensorboard\\backend\\event_processing\\event_file_inspector.py', reloading
+2025-04-30 19:54:47,768 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torchvision\\transforms\\v2\\functional\\_meta.py', reloading
+2025-04-30 19:54:47,773 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\fx\\experimental\\merge_matmul.py', reloading
+2025-04-30 19:54:47,776 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\_export\\pass_base.py', reloading
+2025-04-30 19:54:47,779 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\keras\\src\\applications\\imagenet_utils.py', reloading
+2025-04-30 19:54:47,781 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\backends\\cudagraphs.py', reloading
+2025-04-30 19:54:47,784 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\jit\\_async.py', reloading
+2025-04-30 19:54:47,790 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\_export\\passes\\replace_quantized_ops_with_standard_ops_pass.py', reloading
+2025-04-30 19:54:47,793 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\waitress\\wasyncore.py', reloading
+2025-04-30 19:54:47,800 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\keras\\src\\backend\\openvino\\trainer.py', reloading
+2025-04-30 19:54:47,802 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\wheel.py', reloading
+2025-04-30 19:54:47,816 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\minpoly.py', reloading
+2025-04-30 19:54:47,829 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\subfield.py', reloading
+2025-04-30 19:54:47,835 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\infra\\pass_base.py', reloading
+2025-04-30 19:54:47,842 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\_export\\passes\\constant_folding.py', reloading
+2025-04-30 19:54:47,849 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\tensorflow\\python\\lib\\io\\file_io.py', reloading
+2025-04-30 19:54:47,851 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\keras\\src\\backend\\openvino\\random.py', reloading
+2025-04-30 19:54:47,854 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\networkx\\algorithms\\connectivity\\edge_kcomponents.py', reloading
+2025-04-30 19:54:47,856 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\infra\\partitioner.py', reloading
+2025-04-30 19:54:47,857 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\markdown_it\\rules_block\\table.py', reloading
+2025-04-30 19:54:47,867 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\tensorflow\\python\\distribute\\experimental\\multi_worker_mirrored_strategy.py', reloading
+2025-04-30 19:54:47,870 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\tensorflow\\python\\saved_model\\load_v1_in_v2.py', reloading
+2025-04-30 19:54:47,871 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\numpy\\distutils\\fcompiler\\__init__.py', reloading
+2025-04-30 19:54:47,875 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\tensorboard\\backend\\event_processing\\event_file_inspector.py', reloading
+2025-04-30 19:54:47,878 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torchvision\\transforms\\v2\\functional\\_meta.py', reloading
+2025-04-30 19:54:47,879 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\fx\\experimental\\merge_matmul.py', reloading
+2025-04-30 19:54:47,881 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\_export\\pass_base.py', reloading
+2025-04-30 19:54:47,883 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\keras\\src\\applications\\imagenet_utils.py', reloading
+2025-04-30 19:54:47,884 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\fx\\passes\\backends\\cudagraphs.py', reloading
+2025-04-30 19:54:47,885 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\jit\\_async.py', reloading
+2025-04-30 19:54:47,886 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\_export\\passes\\replace_quantized_ops_with_standard_ops_pass.py', reloading
+2025-04-30 19:54:47,887 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\waitress\\wasyncore.py', reloading
+2025-04-30 19:54:47,891 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\keras\\src\\backend\\openvino\\trainer.py', reloading
+2025-04-30 19:54:47,896 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\pip\\_vendor\\distlib\\wheel.py', reloading
+2025-04-30 19:54:47,899 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\minpoly.py', reloading
+2025-04-30 19:54:47,900 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\sympy\\polys\\numberfields\\subfield.py', reloading
+2025-04-30 19:54:47,907 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\numpy\\matrixlib\\tests\\test_masked_matrix.py', reloading
+2025-04-30 19:54:47,915 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\numpy\\matrixlib\\tests\\test_masked_matrix.py', reloading
+2025-04-30 19:54:47,920 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\sympy\\printing\\tests\\test_torch.py', reloading
+2025-04-30 19:54:47,926 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\sympy\\printing\\tests\\test_torch.py', reloading
+2025-04-30 19:54:47,930 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\jit\\supported_ops.py', reloading
+2025-04-30 19:54:47,930 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\jit\\supported_ops.py', reloading
+2025-04-30 19:54:49,725 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:54:50,999 - app - INFO - Logging setup completed
+2025-04-30 19:54:50,999 - app - INFO - Logging setup completed
+2025-04-30 19:55:17,343 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:55:17,357 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:55:40,012 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\_custom_op\\autograd.py', reloading
+2025-04-30 19:55:40,047 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\_custom_op\\autograd.py', reloading
+2025-04-30 19:55:40,050 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\torch\\_functorch\\compilers.py', reloading
+2025-04-30 19:55:40,051 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\torch\\_functorch\\compilers.py', reloading
+2025-04-30 19:55:40,136 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\setuptools\\config.py', reloading
+2025-04-30 19:55:40,216 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\setuptools\\config.py', reloading
+2025-04-30 19:55:40,292 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\tensorflow\\python\\tpu\\client\\client.py', reloading
+2025-04-30 19:55:40,385 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\tensorflow\\python\\tpu\\client\\client.py', reloading
+2025-04-30 19:55:40,475 - werkzeug - INFO -  * Detected change in 'c:\\users\\hp\\pycharmprojects\\faceverificationapi\\venv\\Lib\\site-packages\\pygments\\lexers\\teraterm.py', reloading
+2025-04-30 19:55:40,626 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\venv\\Lib\\site-packages\\pygments\\lexers\\teraterm.py', reloading
+2025-04-30 19:55:44,858 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:55:47,852 - app - INFO - Logging setup completed
+2025-04-30 19:55:47,852 - app - INFO - Logging setup completed
+2025-04-30 19:56:07,672 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:56:07,690 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 19:56:08,044 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:56:08] "GET /face HTTP/1.1" 200 -
+2025-04-30 19:56:15,124 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:56:15] "GET /face HTTP/1.1" 200 -
+2025-04-30 19:56:16,899 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 19:56:16] "GET /face HTTP/1.1" 200 -
+2025-04-30 19:58:24,802 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 19:58:26,633 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 19:58:27,138 - app - INFO - Logging setup completed
+2025-04-30 19:58:27,138 - app - INFO - Logging setup completed
+2025-04-30 19:58:38,619 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 19:58:38,629 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:02:18,588 - app.api.routes - INFO - request /face
+2025-04-30 20:02:18,588 - app.api.routes - INFO - request /face
+2025-04-30 20:02:18,596 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:02:18] "GET /face HTTP/1.1" 200 -
+2025-04-30 20:02:19,872 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:02:19] "GET /face/detect HTTP/1.1" 200 -
+2025-04-30 20:02:35,370 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:02:35] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 20:06:13,618 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:06:13] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 20:06:16,354 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:06:16] "GET /face/detect HTTP/1.1" 200 -
+2025-04-30 20:06:26,472 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:06:26] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 20:09:39,912 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:09:39,916 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:09:41,672 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:09:42,204 - app - INFO - Logging setup completed
+2025-04-30 20:09:42,204 - app - INFO - Logging setup completed
+2025-04-30 20:09:52,633 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:09:52,646 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:13:07,726 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:13:07,728 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:13:07,729 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:13:07,731 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:13:09,058 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:13:09,526 - app - INFO - Logging setup completed
+2025-04-30 20:13:09,526 - app - INFO - Logging setup completed
+2025-04-30 20:13:20,069 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:13:20,084 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:14:08,857 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:14:08,860 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:14:10,110 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:14:10,593 - app - INFO - Logging setup completed
+2025-04-30 20:14:10,593 - app - INFO - Logging setup completed
+2025-04-30 20:14:21,594 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:14:21,609 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:14:31,184 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:14:31,214 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:14:33,601 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:14:34,098 - app - INFO - Logging setup completed
+2025-04-30 20:14:34,098 - app - INFO - Logging setup completed
+2025-04-30 20:14:45,715 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:14:45,730 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:15:31,499 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:15:31,500 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:15:31,501 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:15:33,153 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:15:33,649 - app - INFO - Logging setup completed
+2025-04-30 20:15:33,649 - app - INFO - Logging setup completed
+2025-04-30 20:15:45,337 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:15:45,351 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:15:45,697 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:15:45] "GET /face/detect HTTP/1.1" 200 -
+2025-04-30 20:15:56,794 - app.api.routes - WARNING - Exception error => /face/detect
+ name 'mtcnn' is not defined
+2025-04-30 20:15:56,794 - app.api.routes - WARNING - Exception error => /face/detect
+ name 'mtcnn' is not defined
+2025-04-30 20:15:56,796 - app.api.error_handlers - WARNING - Exception error => /face/detect 
+ name 'mtcnn' is not defined
+2025-04-30 20:15:56,796 - app.api.error_handlers - WARNING - Exception error => /face/detect 
+ name 'mtcnn' is not defined
+2025-04-30 20:15:56,798 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:15:56] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 20:16:23,341 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:16:23,342 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:16:23,342 - werkzeug - INFO -  * Detected change in 'C:\\Users\\HP\\PycharmProjects\\FaceVerificationApi\\app\\api\\routes.py', reloading
+2025-04-30 20:16:25,245 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-30 20:16:25,794 - app - INFO - Logging setup completed
+2025-04-30 20:16:25,794 - app - INFO - Logging setup completed
+2025-04-30 20:16:37,645 - werkzeug - WARNING -  * Debugger is active!
+2025-04-30 20:16:37,664 - werkzeug - INFO -  * Debugger PIN: 151-674-093
+2025-04-30 20:16:38,141 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:16:38] "GET /face/detect HTTP/1.1" 200 -
+2025-04-30 20:16:40,917 - app.api.routes - INFO - request /face
+2025-04-30 20:16:40,917 - app.api.routes - INFO - request /face
+2025-04-30 20:16:40,921 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:16:40] "GET /face HTTP/1.1" 200 -
+2025-04-30 20:16:42,360 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:16:42] "GET /face/detect HTTP/1.1" 200 -
+2025-04-30 20:16:50,133 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:16:50] "POST /face/detect HTTP/1.1" 200 -
+2025-04-30 20:19:32,379 - app.api.routes - INFO - request /face
+2025-04-30 20:19:32,379 - app.api.routes - INFO - request /face
+2025-04-30 20:19:32,383 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:19:32] "GET /face HTTP/1.1" 200 -
+2025-04-30 20:19:33,603 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:19:33] "GET /face/detect HTTP/1.1" 200 -
+2025-04-30 20:19:41,654 - werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 20:19:41] "POST /face/detect HTTP/1.1" 200 -

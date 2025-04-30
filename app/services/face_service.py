@@ -1,6 +1,7 @@
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from keras import Model
 import numpy as np
+
 class FaceVerificationService:
 
     def __init__(self):
