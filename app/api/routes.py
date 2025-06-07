@@ -1,8 +1,8 @@
-
-
 from flask import jsonify, request, render_template
 from app.api import main_blueprint
 import logging
+
+from app.services.card_service import IDCardProcessor
 from app.services.face_service import FaceVerificationService
 from io import BytesIO
 from PIL import Image
@@ -12,6 +12,7 @@ import base64
 logger = logging.getLogger(__name__)
 
 face_verification_service = FaceVerificationService()
+processor = IDCardProcessor()
 
 @main_blueprint.route('/face', methods=['GET'])
 def index():
@@ -33,6 +34,7 @@ def detect_face():
         img = Image.open(img_bytes).convert('RGB')
 
         face_tensor = face_verification_service.extract_face(img)  # returns tensor: [3, H, W]
+        logger.info(face_tensor)
         if face_tensor is None:
             return jsonify({"message": "No face detected"}), 400
 
@@ -97,3 +99,45 @@ def verify_face():
     except Exception as e:
         logger.warning(f"Exception error => {request.path}\n {e}")
         raise
+
+
+@main_blueprint.route('/face/process-id', methods=['POST'])
+def process_id():
+    try:
+        print("=== DEBUG: process_id called ===")
+        print(f"Request files: {list(request.files.keys())}")
+        print(f"Request form: {dict(request.form)}")
+
+        if 'front' not in request.files or 'back' not in request.files:
+            print("ERROR: Missing files")
+            return jsonify({"error": "Both images required"}), 400
+
+        print("Loading images...")
+        front = processor.load_image(request.files['front'])
+        back = processor.load_image(request.files['back'])
+        print("Images loaded successfully")
+
+        print("Processing front image...")
+        info = processor.process_image(front)
+        print(f"Front processing result: {info}")
+
+        print("Processing back image...")
+        info['job'] = processor.process_job(back)
+        print(f"Back processing result: {info['job']}")
+
+        return jsonify({"status": "success", "data": info})
+    except Exception as e:
+        print(f"ERROR in process_id: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+
+@main_blueprint.route('/face/upload-id')
+def upload_id():
+    return render_template('upload_id.html')
+
+@main_blueprint.route('/face/display-id-info')
+def display_id_info():
+    return render_template('display_id_info.html')

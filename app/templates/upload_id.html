@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Document Processing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .upload-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            border: 2px dashed #ddd;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .upload-section:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .upload-section h3 {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .file-input {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .file-input-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.2s ease;
+        }
+
+        .file-input-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .preview {
+            margin-top: 15px;
+            max-width: 200px;
+            max-height: 150px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #fee;
+            border: 1px solid #fcc;
+            color: #c33;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .file-name {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 ID Document Processor</h1>
+
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="upload-section">
+                <h3>📱 Front Side of ID</h3>
+                <div class="file-input-wrapper">
+                    <input type="file" id="frontFile" name="front" accept="image/*" class="file-input" required>
+                    <button type="button" class="file-input-button">Choose Front Image</button>
+                </div>
+                <div class="file-name" id="frontFileName"></div>
+                <img id="frontPreview" class="preview" alt="Front preview">
+            </div>
+
+            <div class="upload-section">
+                <h3>📱 Back Side of ID</h3>
+                <div class="file-input-wrapper">
+                    <input type="file" id="backFile" name="back" accept="image/*" class="file-input" required>
+                    <button type="button" class="file-input-button">Choose Back Image</button>
+                </div>
+                <div class="file-name" id="backFileName"></div>
+                <img id="backPreview" class="preview" alt="Back preview">
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                🚀 Process ID Documents
+            </button>
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Processing your documents...</p>
+        </div>
+
+        <div class="error" id="error"></div>
+    </div>
+
+    <script>
+        // File input handlers
+        document.getElementById('frontFile').addEventListener('change', function(e) {
+            handleFileSelect(e, 'front');
+        });
+
+        document.getElementById('backFile').addEventListener('change', function(e) {
+            handleFileSelect(e, 'back');
+        });
+
+        function handleFileSelect(event, side) {
+            const file = event.target.files[0];
+            if (file) {
+                // Display file name
+                document.getElementById(side + 'FileName').textContent = file.name;
+
+                // Show preview
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById(side + 'Preview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Form submission
+        document.getElementById('uploadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const frontFile = document.getElementById('frontFile').files[0];
+            const backFile = document.getElementById('backFile').files[0];
+
+            if (!frontFile || !backFile) {
+                showError('Please select both front and back images of your ID.');
+                return;
+            }
+
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('submitBtn').disabled = true;
+            document.getElementById('error').style.display = 'none';
+
+            // Create FormData
+            const formData = new FormData();
+            formData.append('front', frontFile);
+            formData.append('back', backFile);
+
+            try {
+                const response = await fetch('/face/process-id', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    // Store result and redirect to display page
+                    sessionStorage.setItem('idResult', JSON.stringify(result.data));
+                    window.location.href = '/face/display-id-info';
+                } else {
+                    showError(result.message || 'An error occurred while processing your documents.');
+                }
+            } catch (error) {
+                showError('Network error. Please try again.');
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('submitBtn').disabled = false;
+            }
+        });
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
