@@ -8,6 +8,9 @@ from io import BytesIO
 from PIL import Image
 from torchvision import transforms
 import base64
+from werkzeug.utils import secure_filename
+import cv2
+
 
 logger = logging.getLogger(__name__)
 
@@ -29,8 +32,11 @@ def detect_face():
         return jsonify({"message": "No image file provided"}), 400
 
     image_file = request.files['image']
+
+    logger.info(f"image --> {image_file}")
     try:
         img_bytes = BytesIO(image_file.read())
+        logger.info(f"image bytes --> {img_bytes}")
         img = Image.open(img_bytes).convert('RGB')
 
         face_tensor = face_verification_service.extract_face(img)  # returns tensor: [3, H, W]
@@ -57,6 +63,9 @@ def get_embedding():
         return jsonify({"message": "No image file provided"}), 400
 
     image_file = request.files['image']
+
+
+    logger.info(f"here is image file --> {image_file}")
     try:
         img_bytes = BytesIO(image_file.read())
         img = Image.open(img_bytes).convert('RGB')
@@ -66,7 +75,7 @@ def get_embedding():
             return jsonify({"message": "No face detected"}), 400
 
         embedding = face_verification_service.get_embedding(face_tensor)
-
+        # logger.info(f"embedding is {embedding}")
         return (
             jsonify({
                 'message':"get embedding successfuly",
@@ -82,16 +91,23 @@ def get_embedding():
 @main_blueprint.route('/face/verify', methods=['POST'])
 def verify_face():
     data = request.get_json()
+
+
     if data is None:
         return jsonify({"message": "No data provided"}), 400
+
+    if 'embedding1' not in data or 'embedding2' not in data:
+        return jsonify({"message": "Missing embedding data"}), 400
+
     try:
+
         embedding1 = data['embedding1']
         embedding2 = data['embedding2']
-
-        if 'embedding1' not in data or 'embedding2' not in data:
-            return jsonify({"message": "Missing embedding data"}), 400
+        logger.info(f"embedding --> {embedding1[:10]}, {embedding2[:10]}")
 
         similarity = face_verification_service.cosine_similarity(embedding1, embedding2)
+
+        logger.info(f"similarity --> {similarity}")
         if similarity > 0.7:
             return jsonify({"verify": True}), 200
         else:
@@ -110,7 +126,7 @@ def process_id():
 
         if 'front' not in request.files or 'back' not in request.files:
             print("ERROR: Missing files")
-            return jsonify({"error": "Both images required"}), 400
+            return jsonify({"message": "Both images required"}), 400
 
         print("Loading images...")
         front = processor.load_image(request.files['front'])
