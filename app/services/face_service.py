@@ -26,4 +26,11 @@ class FaceVerificationService:
 
     def cosine_similarity(self, a, b):
         """Calculate cosine similarity between two embeddings"""
+        # Convert inputs to numpy arrays if they aren't already
+        a = np.array(a, dtype=np.float32) if not isinstance(a, np.ndarray) else a.astype(np.float32)
+        b = np.array(b, dtype=np.float32) if not isinstance(b, np.ndarray) else b.astype(np.float32)
+
+        a = a.flatten()
+        b = b.flatten()
+
         return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))

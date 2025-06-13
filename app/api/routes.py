@@ -1,7 +1,7 @@
 from flask import jsonify, request, render_template
 from app.api import main_blueprint
 import logging
-
+import numpy as np
 from app.services.card_service import IDCardProcessor
 from app.services.face_service import FaceVerificationService
 from io import BytesIO
@@ -63,35 +63,61 @@ def get_embedding():
         return jsonify({"message": "No image file provided"}), 400
 
     image_file = request.files['image']
+    logger.info(f"Received image file: {image_file.filename}")
 
-
-    logger.info(f"here is image file --> {image_file}")
     try:
-        img_bytes = BytesIO(image_file.read())
-        img = Image.open(img_bytes).convert('RGB')
+        # Read the image file into memory
+        img_bytes = image_file.read()
 
-        face_tensor = face_verification_service.extract_face(img)  # returns tensor: [3, H, W]
+        # Convert bytes to numpy array
+        nparr = np.frombuffer(img_bytes, np.uint8)
+
+        # Decode image using OpenCV (automatically converts to BGR format)
+        img_bgr = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+
+        if img_bgr is None:
+            return jsonify({"message": "Invalid image file"}), 400
+
+        # Convert BGR to RGB (most face recognition models expect RGB)
+        img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)
+
+        # Optional: Resize if needed (maintain aspect ratio)
+        max_dim = 1024
+        h, w = img_rgb.shape[:2]
+        if max(h, w) > max_dim:
+            scale = max_dim / max(h, w)
+            img_rgb = cv2.resize(img_rgb, (0, 0), fx=scale, fy=scale)
+
+        # Extract face - convert to format your service expects
+        # Option 1: If service expects numpy array (RGB format)
+        face_tensor = face_verification_service.extract_face(img_rgb)
+
+        # Option 2: If service expects PIL Image
+        # pil_img = Image.fromarray(img_rgb)
+        # face_tensor = face_verification_service.extract_face(pil_img)
+
         if face_tensor is None:
             return jsonify({"message": "No face detected"}), 400
 
         embedding = face_verification_service.get_embedding(face_tensor)
-        # logger.info(f"embedding is {embedding}")
-        return (
-            jsonify({
-                'message':"get embedding successfuly",
-                'embedding':embedding.tolist()
-            }, 200)
-        )
+        logger.info("Successfully generated embedding")
+        # logger.info(embedding)
+
+        return jsonify({
+            'message': "Embedding generated successfully",
+            'embedding': embedding.tolist()
+        }), 200
 
     except Exception as e:
-        logger.warning(f"Exception error => {request.path}\n {e}")
-        raise
-
+        logger.error(f"Error processing image: {str(e)}", exc_info=True)
+        return jsonify({
+            "message": "Error processing image",
+            "error": str(e)
+        }), 500
 
 @main_blueprint.route('/face/verify', methods=['POST'])
 def verify_face():
     data = request.get_json()
-
 
     if data is None:
         return jsonify({"message": "No data provided"}), 400
@@ -100,21 +126,24 @@ def verify_face():
         return jsonify({"message": "Missing embedding data"}), 400
 
     try:
+        # Convert embeddings to numpy arrays
+        embedding1 = np.array(data['embedding1'], dtype=np.float32)
+        embedding2 = np.array(data['embedding2'], dtype=np.float32)
 
-        embedding1 = data['embedding1']
-        embedding2 = data['embedding2']
-        logger.info(f"embedding --> {embedding1[:10]}, {embedding2[:10]}")
+        logger.info(f"embedding shapes --> {embedding1.shape}, {embedding2.shape}")
+        logger.info(f"embedding types --> {type(embedding1)}, {type(embedding2)}")
+        logger.info(f"embedding dtypes --> {embedding1.dtype}, {embedding2.dtype}")
 
         similarity = face_verification_service.cosine_similarity(embedding1, embedding2)
 
         logger.info(f"similarity --> {similarity}")
         if similarity > 0.7:
-            return jsonify({"verify": True}), 200
+            return jsonify({"verify": True, "similarity": float(similarity)}), 200
         else:
-            return jsonify({"verify": False}), 200
+            return jsonify({"verify": False, "similarity": float(similarity)}), 200
     except Exception as e:
-        logger.warning(f"Exception error => {request.path}\n {e}")
-        raise
+        logger.warning(f"Exception error => {request.path}\n {str(e)}", exc_info=True)
+        return jsonify({"message": "Error processing request", "error": str(e)}), 500
 
 
 @main_blueprint.route('/face/process-id', methods=['POST'])
